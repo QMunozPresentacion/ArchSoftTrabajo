@@ -6,7 +6,42 @@ public class Usuario {
     private float tiempoTotalEstudio;
     private int puntuacion;
     
-    public Usuario() {
+    public Usuario(int idUsuario, String nombre, float tiempoTotalEstudio, int puntuacion) {
+        this.idUsuario = idUsuario;
+        this.nombre = nombre;
+        this.tiempoTotalEstudio = tiempoTotalEstudio;
+        this.puntuacion = puntuacion;
+    }
+    
+    public int getId(){
+        return idUsuario;
     }
 
+    public void setId(int idUsuario){
+        this.idUsuario = idUsuario;
+    }
+    
+    public String getNombre(){
+        return nombre;
+    }
+
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    
+    public float getTiempoTotalEstudio(){
+        return tiempoTotalEstudio;
+    }
+
+    public void setTiempoTotalEstudio(float tiempoTotalEstudio){
+        this.tiempoTotalEstudio = tiempoTotalEstudio;
+    }
+    
+    public float getPuntuacion(){
+        return puntuacion;
+    }
+
+    public void setPuntuacion(int puntuacion){
+        this.puntuacion = puntuacion;
+    }
 }
