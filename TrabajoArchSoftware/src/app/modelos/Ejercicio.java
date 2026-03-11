@@ -7,6 +7,13 @@ public class Ejercicio {
     private float dificultad;
     //private String imagen;
 
+    public Ejercicio(Ejercicio ejercicio) {
+        this.idEjercicio = ejercicio.getId();
+        this.nombre = ejercicio.getNombre();
+        this.descripcion = ejercicio.getDescripcion();
+        this.dificultad = ejercicio.getDificultad();
+    }
+    
     public Ejercicio(int idEjercicio, String nombre, String descripcion, float dificultad) {
         this.idEjercicio = idEjercicio;
         this.nombre = nombre;
@@ -14,7 +21,7 @@ public class Ejercicio {
         this.dificultad = dificultad;
     }
 
-    public int getIdEjercicio() {
+    public int getId() {
         return idEjercicio;
     }
 

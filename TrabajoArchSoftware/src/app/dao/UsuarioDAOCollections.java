@@ -4,11 +4,12 @@ import app.modelos.Usuario;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UsuarioDAOCollections implements UsuarioDAO{
+public class UsuarioDAOCollections implements UsuarioDAO {
     
     private List<Usuario> usuarios = new ArrayList<>();
 
     public UsuarioDAOCollections() {
+        
     }
 
     @Override
