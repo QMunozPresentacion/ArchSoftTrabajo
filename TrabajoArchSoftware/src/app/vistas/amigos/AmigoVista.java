@@ -4,7 +4,7 @@ import app.viewmodels.amigos.FilaRanking;
 import app.viewmodels.amigos.Perfil;
 import java.util.List;
 
-interface AmigoVista {
+public interface AmigoVista {
     void open();
     void close();
     void setRanking(List<FilaRanking> ranking);

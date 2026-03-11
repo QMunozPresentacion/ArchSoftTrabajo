@@ -3,6 +3,7 @@ package app.vistas.historial;
 import app.viewmodels.historial.Analisis;
 import app.viewmodels.historial.FilaHistorial;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class HistorialConsolaImp implements HistorialVista {
@@ -18,7 +19,7 @@ public class HistorialConsolaImp implements HistorialVista {
         System.out.println("Historial:");
         System.out.println("    Fecha       Ejercicio       Tiempo");
         for (FilaHistorial fila : historial) {
-            String fecha = fila.getFecha();
+            Date fecha = fila.getFecha();
             String nombreEjercicio = fila.getNombreEjercicio();
             int tiempo = fila.getTiempo();
             

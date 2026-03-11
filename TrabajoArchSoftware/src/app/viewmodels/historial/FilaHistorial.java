@@ -1,11 +1,13 @@
 package app.viewmodels.historial;
 
+import java.util.Date;
+
 public class FilaHistorial {
-    private String fecha;
+    private Date fecha;
     private String nombreEjercicio;
     private int tiempo;
     
-    public FilaHistorial(String fecha, String nombreEjercicio, int tiempo) {
+    public FilaHistorial(Date fecha, String nombreEjercicio, int tiempo) {
         this.fecha = fecha;
         this.nombreEjercicio = nombreEjercicio;
         this.tiempo = tiempo;
@@ -17,7 +19,7 @@ public class FilaHistorial {
         this.tiempo = fila.getTiempo();
     }
     
-    public String getFecha() {
+    public Date getFecha() {
         return fecha;
     }
     

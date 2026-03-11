@@ -43,7 +43,7 @@ public class Usuario {
         this.tiempoTotalEstudio = tiempoTotalEstudio;
     }
     
-    public float getPuntuacion(){
+    public int getPuntuacion(){
         return puntuacion;
     }
 
@@ -57,5 +57,9 @@ public class Usuario {
     
     public void deleteAmigo(int idAmigo){
         amigos.remove(idAmigo);
+    }
+    
+    public List<Integer> getAmigos(){
+        return amigos;
     }
 }
