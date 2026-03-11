@@ -1,4 +1,4 @@
-package app.view_models;
+package app.viewmodels;
 
 public class FilaAmigo {
     private int idAmigo;
